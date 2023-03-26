@@ -12,8 +12,6 @@ const MemoryGallery = () => {
           {galleryImages?.map((item, index) => {
             return (
               <LazyLoadImage
-                delayTime={500}
-                effect="opacity"
                 className="masonry__img"
                 src={item}
                 alt=""

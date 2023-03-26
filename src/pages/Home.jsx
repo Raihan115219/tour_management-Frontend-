@@ -40,12 +40,7 @@ const Home = () => {
             </Col>
             <Col lg="2">
               <div className="hero__img-box">
-                <LazyLoadImage
-                  src={heroImg}
-                  alt=""
-                  delayTime={500}
-                  effect="opacity"
-                />
+                <LazyLoadImage src={heroImg} alt="" />
               </div>
             </Col>
             <Col lg="2">
@@ -55,12 +50,7 @@ const Home = () => {
             </Col>
             <Col lg="2">
               <div className="hero__img-box  mt-5">
-                <LazyLoadImage
-                  src={heroImg02}
-                  alt=""
-                  effect="opacity"
-                  delayTime={500}
-                />
+                <LazyLoadImage src={heroImg02} alt="" />
               </div>
             </Col>
             <SearchBar />

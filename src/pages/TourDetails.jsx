@@ -82,7 +82,7 @@ const TourDetails = () => {
             <Row>
               <Col lg="8">
                 <div className="tour__content">
-                  <LazyLoadImage src={photo} alt="" effect="opacity" />
+                  <LazyLoadImage src={photo} alt="" />
                   <div className="tour__info">
                     <h2>{title}</h2>
                     <div className="d-flex align-items-center gap-5">

@@ -47,12 +47,7 @@ export const Testimonial = () => {
           velit eius dicta?
         </p>
         <div className="d-flex align-items-center gap-4 mt-3">
-          <LazyLoadImage
-            src={ava01}
-            effect="opacity"
-            alt=""
-            className="w-25 h-25 rounded-2"
-          />
+          <LazyLoadImage src={ava01} alt="" className="w-25 h-25 rounded-2" />
 
           <div>
             <h6 className="mb-0 mt-3">John Doe</h6>
@@ -70,12 +65,7 @@ export const Testimonial = () => {
           velit eius dicta?
         </p>
         <div className="d-flex align-items-center gap-4 mt-3">
-          <LazyLoadImage
-            src={ava02}
-            effect="opacity"
-            alt=""
-            className="w-25 h-25 rounded-2"
-          />
+          <LazyLoadImage src={ava02} alt="" className="w-25 h-25 rounded-2" />
 
           <div>
             <h6 className="mb-0 mt-3">John Doe</h6>
@@ -93,12 +83,7 @@ export const Testimonial = () => {
           velit eius dicta?
         </p>
         <div className="d-flex align-items-center gap-4 mt-3">
-          <LazyLoadImage
-            src={ava03}
-            effect="opacity"
-            alt=""
-            className="w-25 h-25 rounded-2"
-          />
+          <LazyLoadImage src={ava03} alt="" className="w-25 h-25 rounded-2" />
 
           <div>
             <h6 className="mb-0 mt-3">John Doe</h6>

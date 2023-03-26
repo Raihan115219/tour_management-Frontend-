@@ -51,7 +51,6 @@ const Register = () => {
                 <LazyLoadImage
                   src={registerImg}
                   alt=""
-                  effect="opacity"
                   className="w-25 h-25 rounded-2"
                 />
               </div>
