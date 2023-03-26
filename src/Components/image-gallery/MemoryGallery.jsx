@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Masonry from "react-responsive-masonry";
 import { ResponsiveMasonry } from "react-responsive-masonry";
 import galleryImages from "./galleryImages";
@@ -10,7 +11,9 @@ const MemoryGallery = () => {
         <Masonry gutter="2rem">
           {galleryImages?.map((item, index) => {
             return (
-              <img
+              <LazyLoadImage
+                delayTime={500}
+                effect="opacity"
                 className="masonry__img"
                 src={item}
                 alt=""

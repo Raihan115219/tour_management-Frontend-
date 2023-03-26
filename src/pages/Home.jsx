@@ -13,6 +13,7 @@ import FeaturedToursList from "../Components/Featured-tours/FeaturedToursList";
 import MemoryGallery from "../Components/image-gallery/MemoryGallery";
 import { Testimonial } from "../Components/Testimonial/Testimonial";
 import NewsLetter from "../shared/NewsLetter";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const Home = () => {
   return (
     <>
@@ -39,7 +40,12 @@ const Home = () => {
             </Col>
             <Col lg="2">
               <div className="hero__img-box">
-                <img src={heroImg} alt="" />
+                <LazyLoadImage
+                  src={heroImg}
+                  alt=""
+                  delayTime={500}
+                  effect="opacity"
+                />
               </div>
             </Col>
             <Col lg="2">
@@ -49,7 +55,12 @@ const Home = () => {
             </Col>
             <Col lg="2">
               <div className="hero__img-box  mt-5">
-                <img src={heroImg02} alt="" />
+                <LazyLoadImage
+                  src={heroImg02}
+                  alt=""
+                  effect="opacity"
+                  delayTime={500}
+                />
               </div>
             </Col>
             <SearchBar />

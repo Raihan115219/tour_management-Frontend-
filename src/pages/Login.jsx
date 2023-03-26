@@ -6,6 +6,7 @@ import loginImg from "../assets/images/login.png";
 import userIcon from "../assets/images/user.png";
 import { AuthContext } from "../context/AuthContext";
 import { BASE_URL } from "./../utils/config";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
@@ -47,7 +48,7 @@ const Login = () => {
           <Col lg="8" className="m-auto">
             <div className="login__container d-flex justify-content-between">
               <div className="login__img">
-                <img src={loginImg} alt="" />
+                <LazyLoadImage src={loginImg} alt="" />
               </div>
               <div className="login__form">
                 <div className="user">

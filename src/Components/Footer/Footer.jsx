@@ -3,6 +3,7 @@ import { Col, Container, ListGroup, ListGroupItem, Row } from "reactstrap";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const quick_Links = [
   {
@@ -40,7 +41,8 @@ const Footer = () => {
       <Container>
         <Row>
           <Col lg="3">
-            <img src={logo} alt="" className="w-25 h-25" />
+            <LazyLoadImage src={logo} alt="" className="w-25 h-25" />
+
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
               quibusdam.

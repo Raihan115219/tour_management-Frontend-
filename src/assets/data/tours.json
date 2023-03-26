@@ -9,7 +9,7 @@
     "desc": "this is the description",
     "reviews": [],
 
-    "photo": "/tour-images/tour-img01.jpg",
+    "photo": "https://ibb.co/cbycWF6",
     "featured": true
   },
   {
@@ -140,6 +140,19 @@
     "reviews": [],
 
     "photo": "/tour-images/tour-img06.jpg",
+    "featured": true
+  },
+  {
+    "title": "Melborne, Australia",
+    "city": "London",
+    "address": "Somewhere in London",
+    "distance": 300,
+    "price": 99,
+    "maxGroupSize": 10,
+    "desc": "this is the description",
+    "reviews": [],
+
+    "photo": "https://ibb.co/cbycWF6",
     "featured": true
   }
 ]

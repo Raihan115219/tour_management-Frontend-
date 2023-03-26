@@ -9,6 +9,7 @@ import NewsLetter from "../shared/NewsLetter";
 import useFetch from "./../hooks/useFetch.js";
 import { BASE_URL } from "../utils/config.js";
 import { AuthContext } from "./../context/AuthContext";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const TourDetails = () => {
   const { id } = useParams();
@@ -81,7 +82,7 @@ const TourDetails = () => {
             <Row>
               <Col lg="8">
                 <div className="tour__content">
-                  <img src={photo} alt="" />
+                  <LazyLoadImage src={photo} alt="" effect="opacity" />
                   <div className="tour__info">
                     <h2>{title}</h2>
                     <div className="d-flex align-items-center gap-5">

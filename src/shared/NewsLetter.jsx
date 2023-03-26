@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import "../styles/newsLetter.css";
 import maleTourist from "../assets/images/male-tourist.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const NewsLetter = () => {
   return (
@@ -23,7 +24,7 @@ const NewsLetter = () => {
           </Col>
           <Col lg="6">
             <div className="newsletter__img">
-              <img src={maleTourist} alt="" />
+              <LazyLoadImage src={maleTourist} alt="" />
             </div>
           </Col>
         </Row>

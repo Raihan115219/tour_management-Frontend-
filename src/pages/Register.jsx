@@ -6,6 +6,7 @@ import registerImg from "../assets/images/register.png";
 import userIcon from "../assets/images/user.png";
 import { AuthContext } from "../context/AuthContext";
 import { BASE_URL } from "./../utils/config";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const Register = () => {
   const [credentials, setCredentials] = useState({
     email: undefined,
@@ -47,7 +48,12 @@ const Register = () => {
           <Col lg="8" className="m-auto">
             <div className="login__container d-flex justify-content-between">
               <div className="login__img">
-                <img src={registerImg} alt="" />
+                <LazyLoadImage
+                  src={registerImg}
+                  alt=""
+                  effect="opacity"
+                  className="w-25 h-25 rounded-2"
+                />
               </div>
               <div className="login__form">
                 <div className="user">

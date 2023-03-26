@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import { Card, CardBody } from "reactstrap";
 import "../styles/Tour-card.css";
@@ -11,7 +12,7 @@ const TourCard = ({ tour }) => {
     <div className="tour__card">
       <Card>
         <div className="tour__img">
-          <img src={photo} alt="" />
+          <LazyLoadImage src={photo} alt="" />
           {featured && <span> Featured</span>}
         </div>
         <CardBody>

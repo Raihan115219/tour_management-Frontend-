@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Slider from "react-slick";
 import ava01 from "../../assets/images/ava-1.jpg";
 import ava02 from "../../assets/images/ava-2.jpg";
@@ -46,7 +47,13 @@ export const Testimonial = () => {
           velit eius dicta?
         </p>
         <div className="d-flex align-items-center gap-4 mt-3">
-          <img src={ava01} alt="" className="w-25 h-25 rounded-2" />
+          <LazyLoadImage
+            src={ava01}
+            effect="opacity"
+            alt=""
+            className="w-25 h-25 rounded-2"
+          />
+
           <div>
             <h6 className="mb-0 mt-3">John Doe</h6>
             <p>Customer</p>
@@ -63,7 +70,13 @@ export const Testimonial = () => {
           velit eius dicta?
         </p>
         <div className="d-flex align-items-center gap-4 mt-3">
-          <img src={ava02} alt="" className="w-25 h-25 rounded-2" />
+          <LazyLoadImage
+            src={ava02}
+            effect="opacity"
+            alt=""
+            className="w-25 h-25 rounded-2"
+          />
+
           <div>
             <h6 className="mb-0 mt-3">John Doe</h6>
             <p>Customer</p>
@@ -80,7 +93,13 @@ export const Testimonial = () => {
           velit eius dicta?
         </p>
         <div className="d-flex align-items-center gap-4 mt-3">
-          <img src={ava03} alt="" className="w-25 h-25 rounded-2" />
+          <LazyLoadImage
+            src={ava03}
+            effect="opacity"
+            alt=""
+            className="w-25 h-25 rounded-2"
+          />
+
           <div>
             <h6 className="mb-0 mt-3">John Doe</h6>
             <p>Customer</p>
